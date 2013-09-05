@@ -52,7 +52,7 @@ $( document ).ready( function () {
 		var circleBounds = circle.getBounds();
 		if ( circleBounds ) {
 			var lng = circleBounds.getNorthEast().lng();
-			circumferenceLatlng = new google.maps.LatLng(map.getCenter().lat(), lng);
+			circumferenceLatlng = new google.maps.LatLng(circle.getCenter().lat(), lng);
 			circle.set( 'resizer_position', circumferenceLatlng );
 		}
 
